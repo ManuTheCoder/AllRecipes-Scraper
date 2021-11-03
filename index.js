@@ -14,7 +14,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/1/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -29,7 +29,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/2/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -45,7 +45,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/3/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -60,7 +60,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/4/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -75,7 +75,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/5/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -90,7 +90,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/6/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -105,7 +105,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/7/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
@@ -121,7 +121,7 @@ axios.get('https://www.allrecipes.com/sitemaps/recipe/8/sitemap.xml')
 	parseString(response.data, function (err, res) {
 		console.log(res.urlset.url)
 			res.urlset.url.forEach(e => {
-				db.push(e.loc[0].toString())
+				db.push(e.loc[0].toString().replace("https://www.allrecipes.com/recipe/", ""))
 			})
 
 		fs.writeFileSync("db.json", JSON.stringify(db, null, null), 'utf-8')
